@@ -1,0 +1,37 @@
+ECMAScript Error
+Ocorre em tempo de execução;
+Mensagem, nome, linha e Call Stack
+
+DOMException
+Erros relacionados ao Documento Object Model(DOM)
+ou nosso código que está sendo rodado por uma página web.
+
+Tratamento de erros:
+
+Throw: quando eu faço a chamada da função pedindo uma verificação por exemplo
+false or true usando o throw no lugar do "return" ele vai me mostrar uma mensagem de 
+ERRO mesmo
+
+Try...catch: eu pego no try e manipulo no catch em diversas formas
+mostrando o erro como eu quiser. 
+Ambos apontam o erro evidenciando e permitindo achar e corrigir eventual bug.
+
+Finally: um bloco que vai ser executado de qualquer maneira true ou false o erro.
+
+
+
+ASSINCRONICIDADE
+Assíncrono "Que não ocorre ou não se efetiva ao mesmo tempo."
+
+
+Promises : objeto de processamento assíncrono
+
+Inicialmente seu valor é desconhecido. 
+Ela pode, então, ser resolvida ou rejeitada.
+
+Um dado que no momento que você recebe você não sabe o valor.
+
+Pending, Fulfilled, Rejected
+
+resolve e reject são os parâmetros do callback da PROMISES
+
