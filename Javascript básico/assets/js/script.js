@@ -1,4 +1,4 @@
-const BASE_URL = 'https://thatcopy.pw/catapi/rest/';
+const BASE_URL = 'https://api.thecatapi.com/api/images/get?format=src&type=png';
 
 const getCats = async () => {
 	try {
