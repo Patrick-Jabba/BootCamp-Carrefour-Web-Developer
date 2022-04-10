@@ -35,3 +35,226 @@ Pending, Fulfilled, Rejected
 
 resolve e reject são os parâmetros do callback da PROMISES
 
+sao as urls q vao trazer dados do banco de dados pra voces
+
+
+POO:
+
+Paradigmas da programação:
+
+1) Imperativo:
+Foca em como você irá resolver os problemas
+POO é imperativo. Aqui você precisa definir a ordem, como serão chamadas, etc.
+
+2) Declarativo:
+SQL ou programação funcional onde vc declara e elas acontecem
+
+
+Programas são objetos que possuem uma série de propriedades:
+Herança, poliformismo, encapsulamento e abstração
+
+PILARES da POO:
+
+ABSTRAÇÃO: 
+Processo que consiste em isolar um aspecto determinado de um 
+estado de coisas relativamente complexo a fim de simplificar a sua avaliação
+classificação ou para permitir a comunicação do mesmo.
+
+
+HERANÇA:
+
+O objeto filha herda propriedades e métodos do objeto pai.
+
+ENCAPSULAMENTO:
+
+Cada classe tem propriedades e métodos independentes do restante do código.
+
+POLIMORFISMO:
+
+Objetos podem herdar a mesma classe pai, mas se comportarem
+de forma diferente de forma diferente quando invocamos seus métodos.
+
+todos os objetos Javascript herdam propriedades e métodos de um 
+prototype. 
+O objeto Object.prototype está no topo da cadeia.
+
+
+class:
+Não existem nativamente no Javascript, também 
+chamdo de syntatic sugar ou açúcar sintético: 
+
+Uma sintaxe feita para facilitar a escrita
+
+Todas as class são Object e a herança se dá por protótipos.
+Construtor: constrói a classe e passando os parametros ele 
+atribui esses parametros.
+
+Getter e Setter: 
+
+
+
+TIPIFICAÇÃO :
+ESTÁTICA(FORTE) : Quando uma linguagem obriga a definição do tipo e sempre será aquele
+tipo. Linguagem Compilada
+
+DINAMICA(FRACO) : A linguagem vai detectar e assumir naquele momento da compilação o tipo
+da variável. Linguagem interpretada
+
+dados Primitivo: homogêneos
+
+dados Compostos: heterogêneo
+
+textual, numeral, lógico, objeto
+
+
+MÉTODO map
+y = f(x)
+mapping function
+y = 2x
+Cria um novo array nao modifica o array original
+Realiza as operações em ordem do indice 0 ate o ultimo index
+
+array.map(callback, thisArg)   
+						callback(item, index, array)
+
+callback: função a ser executada em cada elemento
+thisArg: valor de this dentro da função de callback
+
+
+MÉTODO forEach:
+
+EXEMPLO usando map
+const array = [1,2,3,4,5];
+array.map(item) => item *2);
+
+EXEMPLO usando forEach
+
+const array = [1,2,3,4,5];
+array.forEach((item) => item * 2);
+
+
+MÉTODO FILTER:
+
+cria um novo array
+nao modifica o array original
+
+sintaxe:
+array.filter(callback, thisArg)
+
+const frutas = ['maçã fuji', 'maçã verde', 'laranja', 'abacaxi'];
+frutas.filter((fruta) => fruta.includes('maçã'))
+//array metodo       //array    metodo
+ 
+// retorno: ['maçã fuji', 'maçã verde'];
+NOVO ARRAY apenas com os elementos que passaram no filtro
+lembrando que o array original frutas permanece inalterado
+
+Callback: função a ser executada em cada elemento
+thisArg(opcional): valor de this dentro da função de callback
+
+MÉTODO reduce:
+
+Diferente dos outros métodos ele não vai retornar outro/um novo array
+Ele irá executar uma function em todos os elements do array
+return ANDO um value único
+
+SINTAXE:
+array.reduce(callbackFn, initialValue)
+Callback: função a ser executada a partir do acumulador.
+initialValue: valor sobre o qual o retorno final irá atuar.
+
+const callbackFn = function(accumulator, currentValue, index, array){
+	//do something
+}
+array.reduce(callbackFn, initialValue)
+accumulator/prevValue: acumulador de todas as chamadas de callbackFn
+currentValue: element atual sendo acessado pela function
+
+
+DOM: DOCUMENT OBJECT MODEL
+document => html bifurca para head e body e assim sucessivamente
+
+BASICAMENTE É UM PADRÃO DE COMO VOCÊ ACESSA E MODIFICA OS 
+ELEMENTOS HTML DE UMA PAGINA.
+
+BOM BROWSER OBJECT MODEL
+Sempre que voce abre um browser ele tem uma propriedade janela/window
+tudo que está dentro do object window inclusive o DOCUMENT (DOM) que é um
+dos filhos do BOM 
+BOM document => history => location => screen => navigator
+
+
+Como manipular os elementos do DOM:
+
+Metodos => tag:(representação) exemplos: html, head, body, section, etc.
+		=> id: dentro de cada tag podemos colocar atributos como o id
+		=> class: diferente dos id's voce pode ter varias classes por 
+
+document.getElementById('titulo');
+//<h1 id="titulo">Minha página</h1>
+document=.getElementsByTagName('li');
+//<li> Projeto1</li>
+//<li>Projeto2</li>
+document.getElementsByClassName('texto');
+//<section class ="textos"...
+document.querySelectorAll('.primeira-classe .segunda-classe');
+//<div class="primeira-classe segunda-classe">
+
+
+document.querySelectorAll('li .opcao');
+aqui busco pelo id e pela classe por exemplo 
+
+document.createElement(element) Cria um novo element HTML
+document.removeChild(element) Remove um elemento
+//tem uma div e dentro um paragrafo ai posso remover o p do elemento pai eg
+document.appendChild(elemento) Adiciona um elemento
+document.replaceChild(new, old) Substitui um elemento
+
+Trablhando com Estilos (CSS)
+
+element.classList //lista de classes pois podemos ter varios elementos em uma classe
+
+const meuElemento = document.getElementById("meu-elemento")
+
+meuElemento.classList.add("novo-estilo");
+//adiciona
+meuElemento.classList.remove("classe");
+//remove
+meuElemento.classList.toggle("dark-mode");
+//adiciona a classe "dark-mode" caso ela não faça parte da lista e remove
+//ela caso faça. 
+
+document.getElementsByTagName("p").style.color = "blue";
+
+EVENTOS
+Qualquer ação que o usuário interage com a pagina
+eventos do mouse
+mouseover, mouseout
+
+eventos de clique
+click, dbclick
+
+eventos de atualização
+change, load
+
+const botao = document.getElementById("meuBotao");
+botao.addEventListener("click", outra Funcao);
+//                 tipo de evento que aciona a outraFuncao
+
+<html>
+<body>
+
+<h1 onclick="mudaTexto(this)">Cliqueaqui!</h1>
+
+<script>
+	function mudaTexto(id){
+		id.innerHTML = "Mudei!";
+	}
+</scritp>
+
+</body>
+</html>
+
+
+jsfiddle
+codepen
