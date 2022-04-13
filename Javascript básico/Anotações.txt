@@ -67,7 +67,34 @@ O objeto filha herda propriedades e métodos do objeto pai.
 
 ENCAPSULAMENTO:
 
+Tem um mesmo padrão, e protege o usuário/programador de fazer besteira no código e o código de fazer
+besteira com o programador, molde padrão 
+
+Ocultar partes independentes da implementação, permitindo construir partes invisíveis ao mundo exterior.
+
+Visibilidade tem a ver com encapsulamento também.
+Interface tb
+
+Interface é uma lista de serviços por um componente. É o contato com o mundo exterior, que define o 
+que pode ser feito com um objeto dessa classe.
+
 Cada classe tem propriedades e métodos independentes do restante do código.
+O encapsulamento é um conceito da Programação Orientada a Objetos onde o estado de objetos 
+(as variáveis da classe) 
+e seus comportamentos (os métodos da classe) são agrupados em conjuntos segundo o seu grau de relação.
+Encapsular não é obrigatório, mas é uma boa prática para produzir Classes mais eficientes.
+
+Vantagens em Encapsular:
+
+1) Tornar mundanças invisíveis;
+
+2) Facilitar a reutilização do código;
+
+3) Reduzir efeitos colaterais;
+
+Como encapsular:
+
+
 
 POLIMORFISMO:
 
