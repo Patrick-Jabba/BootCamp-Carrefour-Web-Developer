@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .container{
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+        }
+        .items{
+            background: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }
+        .space-evenly{
+            justify-content: space-evenly;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comportamento em row: Justify Content flex-start</h1>
+    <section class="class container flex-start">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+    </section>
+    <h1>Justify Content flex-end</h1>
+    <section class="class container flex-end">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+    </section>
+    <h1>Justify Content Center</h1>
+    <section class="class container center">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+    <h1>Space Between</h1>
+    <section class="class container space-between">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+    <h1>Space Around</h1>
+    <section class="class container space-around">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+    <h1>Space evenly</h1>
+    <section class="class container space-evenly">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+
+    <h1>Comportamento em column</h1>
+    <h1>flex-start column</h1>
+    <section class="class container flex-start column">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+    </section>
+    <h1> flex-end column</h1>
+    <section class="class container flex-end column">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+    </section>
+    <h1> Center</h1>
+    <section class="class container center column">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+    <h1>Space Between</h1>
+    <section class="class container space-between column">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+    <h1>Space Around</h1>
+    <section class="class container space-around column">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+    <h1>Space evenly column</h1>
+    <section class="class container space-evenly column">
+        <div class="class items">1</div>
+        <div class="class items">item 2</div>
+        <div class="class items">outro item</div>
+        <div class="class items">4</div>
+        <div class="class items">5</div>
+    </section>
+</body>
+</html>
